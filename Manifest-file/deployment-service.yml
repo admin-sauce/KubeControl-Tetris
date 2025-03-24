@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: tetris
-        image: 2admin1/tetrisv2:latest  # Updated to v2
+        image: 2admin1/tetrisv2:9  # Updated to v2
         ports:
         - containerPort: 3000
 ---
