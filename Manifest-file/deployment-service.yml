@@ -1,5 +1,5 @@
 ---
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: tetris
@@ -15,11 +15,11 @@ spec:
     spec:
       containers:
       - name: tetris
-        image: ikericookies/tetrisv1:43
+        image: ikericookies/tetrisv2:43
         ports:
         - containerPort: 3000
 ---
-apiVersion: v1
+apiVersion: v2
 kind: Service
 metadata:
   name: tetris-service
