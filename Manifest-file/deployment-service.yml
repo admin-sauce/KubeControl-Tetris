@@ -1,5 +1,5 @@
 ---
-apiVersion: apps/v2
+apiVersion: apps/v1  # Fixed API version
 kind: Deployment
 metadata:
   name: tetris
@@ -19,7 +19,7 @@ spec:
         ports:
         - containerPort: 3000
 ---
-apiVersion: v2
+apiVersion: v1  # Fixed API version
 kind: Service
 metadata:
   name: tetris-service
